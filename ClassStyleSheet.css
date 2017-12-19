@@ -1,0 +1,168 @@
+﻿body {
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 0;
+}
+
+/*Class StyleSheet*/
+
+/*Clickable Dropdown*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+    .dropbtn:hover, .dropbtn:focus {
+        /*background-color: #3e8e41;*/
+        background-color: #ddffdd;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 6px 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown a:hover {
+    /*background-color: #f1f1f1;*/
+    background-color: #ddffdd;
+}
+
+.show {
+    display: block;
+}
+
+/* Top Navigation Bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+/*Info Panel*/
+.infopanel {
+    background-color: #ddffdd;
+    border: 4px solid black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: large;
+}
+
+.itt-btn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .itt-btn:hover, .dropbtn:focus {
+        /*background-color: #3e8e41;*/
+        background-color: #ddffdd;
+    }
+
+.itt-btn1 {
+    background-color: #ffffff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #cccccc;
+}
+
+    .itt-btn1:hover, .dropbtn:focus {
+        /*background-color: #3e8e41;*/
+        background-color: #ddffdd;
+    }
+
+.itt-btn2 {
+    background-color: #ddffdd;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #cccccc;
+    /*width:1000px;*/
+}
+
+    .itt-btn2:hover, .dropbtn:focus {
+        /*background-color: #3e8e41;*/
+        background-color: #ddffdd;
+    }
+
+/*Example*/
+.example {
+    background-color: hsl(0, 0%, 89%);
+    color: black;
+    padding: 18px;
+    /*padding-bottom:20px;*/
+    width: auto;
+    margin: 10px;
+    /*margin-bottom: 110px;*/
+}
+
+/*Example Information*/
+.exampleInfo {
+    background-color: #ffffff;
+    color: black;
+    padding: 16px;
+    width: auto;
+    margin: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+.btn {
+    font-size: 24px;
+    background-color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+    .btn:hover {
+        background-color: #ddffdd;
+    }

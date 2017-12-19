@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Sean Mulholland
+    16357367
+    Assignment 01
+    16 December 2017-->
+
+    <meta charset="utf-8" />
+    <title>Dropdown Code</title>
+    <link href="IdStyleSheet.css" rel="stylesheet" />
+    <link href="ClassStyleSheet.css" rel="stylesheet" />
+    <script src="modernizr-1.5.js"></script>
+</head>
+
+<body>
+    <script src="JavaScript.js"></script>
+    <header id="pageheader">
+        <h1>Independent Technology Training<a title="Home" href="JSHome.html"><img src="Logo1.png" alt="Logo Image" style="width:100px;height:40px"></a></h1>
+        <p>BEGINNERS GUIDE TO LEARNING JAVASCRIPT</p>
+    </header>
+
+    <nav>
+    </nav>
+
+    <div class="topnav">
+        <a class="active" href="JSHome.html">JS Home</a>
+        <a href="JSIntro.html">JS Introduction</a>
+        <a href="JSVariables.html">JS Variables</a>
+        <a href="JSDataTypes.html">JS Data Types</a>
+        <a href="JSConditions.html">JS Conditions</a>
+        <a href="JSFunctions.html">JS Functions</a>
+    </div><br /><br />
+
+    <a class="itt-btn1" href="JSHome.html">< Previous</a>
+    <a class="itt-btn2" href="JSIntro.html">Next ></a>
+    <section id="leftsection">
+        <h4>The code required for the Dropdown Menu to function</h4>
+        <h2 id="steps">Step 1) Add HTML:</h2>
+
+        <div class="example">
+            <h4>HTML Code</h4>
+            <div class="exampleInfo">
+                &lt;div class="dropdown"&gt;<br />
+                &lt;button onclick="myFunction()" class="dropbtn"&gt;Dropdown&lt;/button&gt;<br />
+                &lt;div id="myDropdown" class="dropdown-content"&gt;<br />
+                &lt;a href="#"&gt;Link 1&lt;/a&gt;<br />
+                &lt;a href="#"&gt;Link 2&lt;/a&gt;<br />
+                &lt;a href="#"&gt;Link 3&lt;/a&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;/div&gt;
+            </div>
+        </div>
+        <hr />
+
+        <h2 id="steps">Step 2) Add CSS:</h2>
+
+        <div class="example">
+            <h4>CSS Code</h4>
+            <div class="exampleInfo">
+                /* Dropdown Button */<br />
+                .dropbtn {<br />
+                background-color: #4CAF50;<br />
+                color: white;<br />
+                padding: 16px;<br />
+                font-size: 16px;<br />
+                border: none;<br />
+                cursor: pointer;<br />
+                }<br />
+                <br />
+                /* Dropdown button on hover &amp; focus */<br />
+                .dropbtn:hover, .dropbtn:focus {<br />
+                background-color: #3e8e41;<br />
+                }<br />
+                <br />
+                /* The container &lt;div&gt; - needed to position the dropdown content */<br />
+                .dropdown {<br />
+                position: relative;<br />
+                display: inline-block;<br />
+                }<br />
+                <br />
+                /* Dropdown Content (Hidden by Default) */<br />
+                .dropdown-content {<br />
+                display: none;<br />
+                position: absolute;<br />
+                background-color: #f9f9f9;<br />
+                min-width: 160px;<br />
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);<br />
+                z-index: 1;<br />
+                }<br />
+                <br />
+                /* Links inside the dropdown */<br />
+                .dropdown-content a {<br />
+                color: black;<br />
+                padding: 12px 16px;<br />
+                text-decoration: none;<br />
+                display: block;<br />
+                }<br />
+                <br />
+                /* Change color of dropdown links on hover */<br />
+                .dropdown-content a:hover {background-color: #f1f1f1}<br />
+                <br />
+                /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */<br />
+                .show {display:block;}
+            </div>
+        </div>
+        <hr />
+
+        <h2 id="steps">Step 3) Add JavaScript:</h2>
+
+        <div class="example">
+            <h4>JavaScript Code</h4>
+            <div class="exampleInfo">
+                /* When the user clicks on the button, <br />
+                toggle between hiding and showing the dropdown content */<br />
+                function myFunction() {<br />
+                document.getElementById("myDropdown").classList.toggle("show");<br />
+                }<br />
+                <br />
+                // Close the dropdown menu if the user clicks outside of it<br />
+                window.onclick = function(event) {<br />
+                if (!event.target.matches('.dropbtn')) {<br />
+                <br />
+                var dropdowns = document.getElementsByClassName("dropdown-content");<br />
+                var i;<br />
+                for (i = 0; i &lt; dropdowns.length; i++) {<br />
+                var openDropdown = dropdowns[i];<br />
+                if (openDropdown.classList.contains('show')) {<br />
+                openDropdown.classList.remove('show');<br />
+                }<br />
+                }<br />
+                }<br />
+                }
+            </div>
+        </div>
+
+    </section>
+
+    <article></article>
+
+    <aside></aside>
+
+    <footer>
+        <p>Site Created by Sean Mulholland with the help of: <a href="https://www.w3schools.com/default.asp">w3schools.com</a></p>
+        <p>Contact Information: <a href="mailto:sean.mulholland@xtra.co.nz">sean.mulholland@xtra.co.nz</a></p>
+    </footer>
+
+</body>
+</html>
