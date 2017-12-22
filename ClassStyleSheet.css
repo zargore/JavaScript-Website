@@ -25,6 +25,7 @@
     display: inline-block;
     margin-left: auto;
     margin-right: 150px;
+    text-align: left;
 }
 
 .dropdown-content {
@@ -128,7 +129,9 @@
     cursor: pointer;
     text-decoration: none;
     border: 1px solid #cccccc;
-    /*width:1000px;*/
+    /*margin-left:1600px;*/
+    /*margin:50em;*/
+   
 }
 
     .itt-btn2:hover, .dropbtn:focus {

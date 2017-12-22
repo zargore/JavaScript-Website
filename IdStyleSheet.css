@@ -21,6 +21,7 @@
 
 #leftsection {
     padding: 14px 16px;
+    text-align: left;
 }
 
     #leftsection h4, h3 {
@@ -41,10 +42,10 @@
     width:auto;
 }*/
 
-#rightsection h4 {
+/*#rightsection h4 {
     font-size: 24px;
     font-weight: normal;
-}
+}*/
 
 #example {
     background-color: hsl(0, 0%, 89%);

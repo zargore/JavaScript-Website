@@ -11,80 +11,90 @@
     <link href="IdStyleSheet.css" rel="stylesheet" />
     <link href="ClassStyleSheet.css" rel="stylesheet" />
     <script src="modernizr-1.5.js"></script>
+    <script src="JavaScript.js"></script>
 </head>
 
 <body>
-    <script src="JavaScript.js"></script>
+
+    <!--Page Heading-->
     <header id="pageheader">
         <h1>Independent Technology Training<a title="Home" href="JSHome.html"><img src="Logo1.png" alt="Logo Image" style="width:100px;height:40px"></a></h1>
         <p>BEGINNERS GUIDE TO LEARNING JAVASCRIPT</p>
     </header>
 
     <nav>
+        <!--Navigation toolbar top of the page-->
+        <div class="topnav">
+            <a href="JSHome.html">JS Home</a>
+            <a href="JSIntro.html">JS Introduction</a>
+            <a class="active " href="JSVariables.html">JS Variables</a>
+            <a href="JSDataTypes.html">JS Data Types</a>
+            <a href="JSConditions.html">JS Conditions</a>
+            <a href="JSFunctions.html">JS Functions</a>
+        </div><br /><br />
     </nav>
 
-    <div class="topnav">
-        <a href="JSHome.html">JS Home</a>
-        <a href="JSIntro.html">JS Introduction</a>
-        <a class="active " href="JSVariables.html">JS Variables</a>
-        <a href="JSDataTypes.html">JS Data Types</a>
-        <a href="JSConditions.html">JS Conditions</a>
-        <a href="JSFunctions.html">JS Functions</a>
-    </div><br /><br />
+    <!--Navigation buttons - Previous & Next-->
+        <a class="itt-btn1" href="JSIntro.html">❮ Previous</a>
+        <a class="itt-btn2" href="JSDataTypes.html">Next ❯</a>
 
-    <a class="itt-btn1" href="JSIntro.html">< Previous</a>
-    <a class="itt-btn2" href="JSDataTypes.html">Next ></a>
+
+    <!--Main topic information for each page-->
     <section id="leftsection">
         <h2>JavaScript Variables</h2>
         <hr /><br />
 
         <div class="infopanel">
             <p>JavaScript variables are containers for storing data values.</p>
-            <p>Variables can be thought of as named containers.<br /> You can place data into these containers and then refer to the data simply by naming the container.<br /> Before you use a variable in a JavaScript program, you must declare it.<br /> Variables are declared with the let keyword as follows.</p>
+            <p>
+                Variables can be thought of as named containers.<br /> You can place data into these containers and then refer to the data simply by naming the container.<br />
+                Before you use a variable in a JavaScript program, you must declare it.<br /> Variables are declared with the let keyword as follows.
+            </p>
         </div><br />
         <hr />
 
+        <!--Variables Example-->
         <p>In this example, x, y, and z, are variables:</p>
         <div class="example">
             <h4>Example</h4>
             <div class="exampleInfo">
-                <p>let x = 5</p>
-                <p>let y = 6</p>
-                <p>let z = x + y</p>
+                <p><span style="color:blue">let</span> x = <span style="color:red">25</span></p>
+                <p><span style="color:blue">let</span> y = <span style="color:red">100</span></p>
+                <p><span style="color:blue">let</span> z = x + y</p><br />
+                <p id="demo"></p>
             </div>
             <br />
-            <a class="itt-btn" href="JSVariablesAnswer1.html" target="_blank">Try it Yourself>></a>
+            <a class="itt-btn" onclick="varAnswer1()">Try it Yourself>></a>
         </div>
 
         <p>From the example above, you can expect:</p>
         <ul>
-            <li>x stores the value 5</li>
-            <li>y stores the value 6</li>
-            <li>z stores the value 11</li>
+            <li>x stores the value 25</li>
+            <li>y stores the value 100</li>
+            <li>z stores the value 125</li>
         </ul><br />
         <hr />
 
+        <!--Variables Example-->
         <h4>Much Like Algebra</h4>
         <p>In this example, price1, price2, and total, are variables:</p>
         <div class="example">
             <h4>Example</h4>
             <div class="exampleInfo">
-                <p>let price1 = 200</p>
-                <p>let price2 = 300</p>
-                <p>let total = price1 + price2</p>
+                <p><span style="color:blue">let</span> price1 = <span style="color:red">200</span></p>
+                <p><span style="color:blue">let</span> price2 = <span style="color:red">300</span></p>
+                <p><span style="color:blue">let</span> total = price1 + price2</p>
+                <br />
+                <p id="demo1"></p>
             </div>
             <p>What do you think the answer will be?</p>
             <br />
-            <a class="itt-btn" href="JSVariablesAnswer2.html" target="_blank">Try it Yourself>></a>
+            <a class="itt-btn" onclick="varAnswer2()">Try it Yourself>></a>
             <p></p>
         </div>
 
 
     </section>
-
-    <article></article>
-
-    <aside></aside>
 
     <footer>
         <p>Site Created by Sean Mulholland with the help of: <a href="https://www.w3schools.com/default.asp">w3schools.com</a></p>
