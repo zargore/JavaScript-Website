@@ -11,30 +11,35 @@
     <link href="IdStyleSheet.css" rel="stylesheet" />
     <link href="ClassStyleSheet.css" rel="stylesheet" />
     <script src="modernizr-1.5.js"></script>
+    <script src="JavaScript.js"></script>
 </head>
 
 <body>
-    <script src="JavaScript.js"></script>
-    <header id="pageheader">
+
+    <!--Page Heading-->
+    <header class="pageheader">
         <h1>Independent Technology Training<a title="Home" href="JSHome.html"><img src="Logo1.png" alt="Logo Image" style="width:100px;height:40px"></a></h1>
         <p>BEGINNERS GUIDE TO LEARNING JAVASCRIPT</p>
     </header>
 
     <nav>
+        <!--Navigation toolbar top of the page-->
+        <div class="topnav">
+            <a href="JSHome.html">JS Home</a>
+            <a href="JSIntro.html">JS Introduction</a>
+            <a href="JSVariables.html">JS Variables</a>
+            <a class="active " href="JSDataTypes.html">JS Data Types</a>
+            <a href="JSConditions.html">JS Conditions</a>
+            <a href="JSFunctions.html">JS Functions</a>
+        </div><br /><br />
     </nav>
 
-    <div class="topnav">
-        <a href="JSHome.html">JS Home</a>
-        <a href="JSIntro.html">JS Introduction</a>
-        <a href="JSVariables.html">JS Variables</a>
-        <a class="active " href="JSDataTypes.html">JS Data Types</a>
-        <a href="JSConditions.html">JS Conditions</a>
-        <a href="JSFunctions.html">JS Functions</a>
-    </div><br /><br />
+    <!--Navigation buttons - Previous & Next-->
+        <a class="itt-btn1" href="JSVariables.html">❮ Previous</a>
+        <a class="itt-btn2" href="JSConditions.html">Next ❯</a>
 
-    <a class="itt-btn1" href="JSVariables.html">< Previous</a>
-    <a class="itt-btn2" href="JSConditions.html">Next ></a>
-    <section id="leftsection">
+    <!--Main topic information for each page-->
+    <section class="leftsection">
         <h2>JavaScript Data Types</h2>
         <hr /><br />
 
@@ -43,16 +48,18 @@
         </div><br />
         <hr />
 
+        <!--Data Types Example -->
         <div class="example">
             <h4>Example</h4>
             <div class="exampleInfo">
-                <p>let length = 16; &emsp;&emsp;&emsp; //Number</p>        <! How do you just change one word in this paragraph-->
-                <p>let lastName = "Johnson"; &emsp; //String</p>
-                <p>let x = {firstName: "John", lastName: "Doe"};&emsp; //Object</p>
+                <p><span style="color:blue">let</span> length = <span style="color:red">16</span>; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span style="color:green">//Number</span></p>       
+                <p><span style="color:blue">let</span> lastName = <span style="color:brown">"Johnson"</span>; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span style="color:green">//String</span></p>
+                <p><span style="color:blue">let</span> x = {firstName: <span style="color:brown">"John"</span>, lastName: <span style="color:brown">"Doe"</span>};&emsp; <span style="color:green">//Object</span></p>
             </div>
         </div><br />
         <hr />
 
+        <!--Data Types Example -->
         <h4>The Concept of Data Types</h4>
         <p>In programming, data types is an important concept.</p>
         <p>To be able to operate on variables, it is important to know something about the type.</p>
@@ -60,19 +67,28 @@
         <div class="example">
             <h4>Example</h4>
             <div class="exampleInfo">
-                <p>let x = 16 + "Volvo";</p>
+                <p><span style="color:blue">let</span> x = <span style="color:red">16</span> + <span style="color:brown">"Volvo"</span>;</p>
             </div>
             <br />
         </div>
         <p>Does it make sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result?</p>
+        <br /><hr />
+
+        <!--Data Types Example-->
+        <p>When adding a string and a number, JavaScript will treat the number as a string.</p>
+        <div class="example">
+            <h4>Example</h4>
+            <div class="exampleInfo">
+                <p><span style="color:blue">let</span> x = <span style="color:brown">"Volvo"</span> + <span style="color:red">16</span>;</p><br />
+                <p id="demo2"></p>
+            </div>
+            <br />
+            <a class="itt-btn" onclick="dataTypesAnswer()">Try it Yourself>></a><br />
+        </div>
 
     </section>
 
-    <article></article>
-
-    <aside></aside>
-
-    <footer>
+    <footer class="pagefooter">
         <p>Site Created by Sean Mulholland with the help of: <a href="https://www.w3schools.com/default.asp">w3schools.com</a></p>
         <p>Contact Information: <a href="mailto:sean.mulholland@xtra.co.nz">sean.mulholland@xtra.co.nz</a></p>
     </footer>
