@@ -46,15 +46,19 @@ function dataTypesAnswer() {
 
 // Function for Conditions Example 1 Answer
 function conditionAnswer() {
-    if (new Date().getHours() < 18) {
-        document.getElementById("demo3").innerHTML =
-            "Good day!";
+    let hour = new Date().getHours();
+    let greeting;
+    if (hour < 18) {
+        greeting = "Good Day!";
+    } else {
+        greeting = "Good Evening!"
     }
+    document.getElementById("demo3").innerHTML = greeting;
 }
 
-// Function for Functions Example 1 Answer
-function myFunction(p1, p2) {
-    return p1 * p2;
-}
-document.getElementById("demo4").innerHTML =
-    "The output of p1 * p2 = " + myFunction(4, 3);
+    // Function for Functions Example 1 Answer
+    function myFunction(p1, p2) {
+        return p1 * p2;
+    }
+    document.getElementById("demo4").innerHTML =
+        "The output of p1 * p2 = " + myFunction(4, 3);

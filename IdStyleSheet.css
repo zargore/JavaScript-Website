@@ -1,52 +1,14 @@
-﻿body {
-    font-family: Tahoma, Geneva, sans-serif;
-    margin: 0;
-    background-image: url('gradient-background.jpg');
-    background-repeat: repeat-x;
-    background-color: hsl(0, 0%, 94%);
-    padding: 16px;
+﻿
+/*Id StyleSheet*/
+body {
+
 }
-
-/*Id Style*/
-/*HTMl 5 Semantic Elements*/
-#pageheader h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-#pageheader {
-    text-align: center;
-    font-size: 22px;
-}
-
-#leftsection {
-    padding: 14px 16px;
-    text-align: left;
-}
-
-    #leftsection h4, h3 {
-        font-size: 24px;
-        font-weight: normal;
-    }
-
 
 #myDropdown {
     width: 200px;
 }
-/*#rightsection {
-    text-align: center;
-    padding: 14px 16px;
-    width:auto;
-    margin-left:950px;
-    margin-right:auto;
-    width:auto;
-}*/
 
-/*#rightsection h4 {
-    font-size: 24px;
-    font-weight: normal;
-}*/
-
+/*Example box form homepage*/
 #example {
     background-color: hsl(0, 0%, 89%);
     color: black;
@@ -55,11 +17,6 @@
     width: auto;
     margin-bottom: 110px;
     position: relative;
-}
-
-#steps {
-    background-color: #ddffdd;
-    color: black;
 }
 
 #round {
@@ -76,8 +33,4 @@
     width: 60%
 }
 
-footer {
-    border-top: 1px solid black;
-    clear: both;
-    text-align: center;
-}
+

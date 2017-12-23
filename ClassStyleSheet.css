@@ -1,9 +1,42 @@
-﻿body {
+﻿
+/*Class StyleSheet*/
+
+body {
     font-family: Tahoma, Geneva, sans-serif;
     margin: 0;
+    background-image: url('gradient-background.jpg');
+    background-repeat: repeat-x;
+    background-color: hsl(0, 0%, 94%);
+    padding: 16px;
 }
 
-/*Class StyleSheet*/
+/*HTMl 5 Semantic Elements*/
+.pageheader h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.pageheader {
+    text-align: center;
+    font-size: 22px;
+}
+
+.leftsection {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+    .leftsection h4, h3 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+.pagefooter {
+    border-top: 1px solid black;
+    clear: both;
+    text-align: center;
+}
+
 
 /*Clickable Dropdown*/
 .dropbtn {
@@ -89,6 +122,7 @@
     font-size: large;
 }
 
+/*Buttons*/
 .itt-btn {
     background-color: #4CAF50;
     color: black;
@@ -139,11 +173,22 @@
         background-color: #ddffdd;
     }
 
-/*Example*/
+.btn {
+    font-size: 24px;
+    background-color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+    .btn:hover {
+        background-color: #ddffdd;
+    }
+
+/*Example box*/
 .example {
     background-color: hsl(0, 0%, 89%);
     color: black;
-    padding: 18px;
+    padding: 8px;
+    padding-bottom: 22px;
     /*padding-bottom:20px;*/
     width: auto;
     margin: 10px;
@@ -160,7 +205,14 @@
     border-left: 4px solid #4CAF50;
 }
 
-.btn {
+
+.steps {
+    background-color: #ddffdd;
+    color: black;
+}
+
+
+/*.btn {
     font-size: 24px;
     background-color: #4CAF50;
     margin-bottom: 10px;
@@ -168,4 +220,4 @@
 
     .btn:hover {
         background-color: #ddffdd;
-    }
+    }*/
